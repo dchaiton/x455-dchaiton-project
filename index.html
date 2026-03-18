@@ -4,7 +4,12 @@
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
 <link rel="stylesheet" href="./css/w3.css" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search,shopping_cart" />
+
 </head>
 <body>
 
@@ -19,9 +24,47 @@
       <a href="#tips & planning" class="w3-bar-item w3-button">Tips & Planning</a>
       <a href="#hotels & resorts" class="w3-bar-item w3-button">Hotels & Resorts</a>
       <a href="#shopping" class="w3-bar-item w3-button">Shopping</a>
+      <span class="material-symbols-outlined">search</span>
+      <span class="material-symbols-outlined">shopping_cart</span>
     </div>
+    <a
+          href="javascript:void(0)"
+          class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+          onclick="w3_open()"
+        >
+          <!-- use the hamburger icon (menu icon) from font-awesome.min.css -->
+          <i class="fa fa-bars"></i>
+        </a>
   </div>
 </div>
+<nav
+      class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large"
+      style="display: none"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-large w3-padding-16"
+        >Close &times;</a
+      >
+      <a href="#destinations" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Destinations</a
+      >
+      <a href="#trip ideas" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Trip Ideas</a
+      >
+      <a href="#tips & planning" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Tips & Planning</a
+      >
+       <a href="#hotels & resorts" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Hotel & Resorts</a
+      > 
+       <a href="#shopping" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Shopping</a
+      >
+    
+    </nav>
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
@@ -179,6 +222,24 @@
 <footer class="w3-center w3-black w3-padding-16">
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
+
+<script>
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+      }
+    </script>
 
 </body>
 </html>
