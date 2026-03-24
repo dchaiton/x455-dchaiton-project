@@ -10,20 +10,83 @@
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search,shopping_cart" />
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+.libre-caslon-text-regular {
+  font-family: "Libre Caslon Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-caslon-text-bold {
+  font-family: "Libre Caslon Text", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 28px;
+}
+
+.libre-caslon-text-regular-italic {
+  font-family: "Libre Caslon Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+a {
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+      }
+/* my css */
+      .my-img-size-1 {
+        max-width: 300px;
+      }
+
+      .my-img-size-2 {
+        max-width: 500px;
+      }
+
+      /* place the element to the left */
+      .my-float-left {
+        float: left;
+        padding-right: 20px;
+      }
+
+      /* place the element to the right */
+      .my-float-right {
+        float: right;
+        padding-left: 20px;
+      }
+
+      /* class with scrollabe effect */
+      .my-scrolling {
+        height: 300px;
+        overflow: auto;
+      }
+
+      /* center the carousel slide */
+      .mySlides {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 65%;
+      }
+</style>
+        
 </head>
 <body>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="#home" class="w3-bar-item w3-button"></b>VOYAGE</a>
+    <a href="#home" class="libre-caslon-text-bold"></b>VOYAGE</a>
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
-      <a href="#destinations" class="w3-bar-item w3-button">Destinations</a>
-      <a href="#trip ideas" class="w3-bar-item w3-button">Trip Ideas</a>
-      <a href="#tips & planning" class="w3-bar-item w3-button">Tips & Planning</a>
-      <a href="#hotels & resorts" class="w3-bar-item w3-button">Hotels & Resorts</a>
-      <a href="#shopping" class="w3-bar-item w3-button">Shopping</a>
+      <a href="#destinations" class="libre-caslon-text-regular">Destinations</a>
+      <a href="#trip ideas" class="libre-caslon-text-regular">Trip Ideas</a>
+      <a href="#tips & planning" class="libre-caslon-text-regular">Tips & Planning</a>
+      <a href="#hotels & resorts" class="libre-caslon-text-regular">Hotels & Resorts</a>
+      <a href="#shopping" class="libre-caslon-text-regular">Shopping</a>
       <span class="material-symbols-outlined">search</span>
       <span class="material-symbols-outlined">shopping_cart</span>
     </div>
@@ -70,17 +133,111 @@
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
   <img class="w3-image" src="img/banff cover.jpg" alt="Architecture" width="1500" height="800">
   <div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Discover</b></span> <span class="w3-hide-small w3-text-light-grey">Banff</span></h1>
+  <h1 style="font-family:libre caslon text bold" class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min">Discover Banff</h1>
+  <h2 style="font-family:libre caslon text bold" class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min">Family Fun in the Canadian Rockies</h2>
   </div>
+
+
 </header>
 
 <!-- Page content -->
 <div class="w3-content w3-padding" style="max-width:1564px">
 
   <!-- Project Section -->
-  <div class="w3-container w3-padding-32" id="destinations">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Destinations</h3>
+      <div class="w3-row w3-padding-64" id="destinations">
+        <div class="w3-padding-large">
+          <h1 class="w3-center" style="font-family:libre caslong text bold">Destinations</h1>
+
   </div>
+  <img class="mySlides" src="./img/family travel_TOC.jpg" style="width: 100%" />
+            <img
+              class="mySlides"
+              src="./img/banff kayak.jpg"
+              style="width: 100%; display: none"
+            />
+            <img
+              class="mySlides"
+              src="./img/banff lake with canoe.jpg"
+              style="width: 100%; display: none"
+            />
+            <img
+              class="mySlides"
+              src="./img/woman with flag.jpg"
+              style="width: 100%; display: none"
+            />
+            <img
+              class="mySlides"
+              src="./img/Johnston-Canyon-Trail.jpg"
+              style="width: 100%; display: none"
+            />
+            <img
+              class="mySlides"
+              src="./img/Parker-Ridge Trail.jpg"
+              style="width: 100%; display: none"
+            />
+          </div>
+
+           <div class="w3-col s3">
+            <!-- "currentDiv(1)" link to 1st slide -->
+            <!-- demo class is used by a javascript function to turn off the opacity effect -->
+            <img
+              class="demo w3-opacity w3-hover-opacity-off"
+              src="./img/family travel_TOC.jpg"
+              style="width: 100%; cursor: pointer; padding: 7px"
+              onclick="currentDiv(1)"
+            />
+          </div>
+          <div class="w3-col s3">
+            <!-- "currentDiv(2)" link to 2nd slide -->
+            <!-- demo class is used by a javascript function to turn off the opacity effect -->
+            <img
+              class="demo w3-opacity w3-hover-opacity-off"
+              src="./img/banff kayak.jpg"
+              style="width: 100%; cursor: pointer; padding: 7px"
+              onclick="currentDiv(2)"
+            />
+          </div>
+          <div class="w3-col s3">
+            <!-- "currentDiv(3)" link to 3rd slide -->
+            <!-- demo class is used by a javascript function to turn off the opacity effect -->
+            <img
+              class="demo w3-opacity w3-hover-opacity-off"
+              src="./img/banff lake with canoe.jpg"
+              style="width: 100%; cursor: pointer; padding: 7px"
+              onclick="currentDiv(3)"
+            />
+          </div>
+          <div class="w3-col s3">
+            <!-- "currentDiv(4)" link to 4th slide -->
+            <!-- demo class is used by a javascript function to turn off the opacity effect -->
+            <img
+              class="demo w3-opacity w3-hover-opacity-off"
+              src="./img/woman with flag.jpg"
+              style="width: 100%; cursor: pointer; padding: 7px"
+              onclick="currentDiv(4)"
+            />
+          </div>
+          <div class="w3-col s3">
+            <!-- "currentDiv(5)" link to 5th slide -->
+            <!-- demo class is used by a javascript function to turn off the opacity effect -->
+            <img
+              class="demo w3-opacity w3-hover-opacity-off"
+              src="./img/Johnston-Canyon-Trail.jpg"
+              style="width: 100%; cursor: pointer; padding: 7px"
+              onclick="currentDiv(5)"
+            />
+            </div>
+            <div class="w3-col s3">
+            <!-- "currentDiv(6)" link to 6th slide -->
+            <!-- demo class is used by a javascript function to turn off the opacity effect -->
+            <img
+              class="demo w3-opacity w3-hover-opacity-off"
+              src="./img/Parker-Ridge Trail.jpg"
+              style="width: 100%; cursor: pointer; padding: 7px"
+              onclick="currentDiv(6)"
+            />
+            </div>
+          
 
   <div class="w3-row-padding">
     <div class="w3-col l3 m6 w3-margin-bottom">
@@ -219,10 +376,58 @@
 
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-16">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
-
+ <footer class="w3-center w3-black w3-padding-64">
+      <a href="#home" class="w3-button w3-light-grey"
+        ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
+      >
+      <div class="w3-xlarge w3-section">
+        <a
+          class="fa fa-twitter w3-hover-opacity w3-text-white"
+          href="https://twitter.com/"
+          target="_blank"
+        ></a>
+        <a
+          class="fa fa-instagram w3-hover-opacity w3-text-white"
+          href="https://www.instagram.com/"
+          target="_blank"
+        ></a>
+        <a
+          class="fa fa-linkedin w3-hover-opacity w3-text-white"
+          href="https://www.linkedin.com/"
+          target="_blank"
+        ></a>
+        <a
+          class="fa fa-pinterest-p w3-hover-opacity w3-text-white"
+          href="https://www.pinterest.com/"
+          target="_blank"
+        ></a>
+        <a
+          class="fa fa-facebook-official w3-hover-opacity w3-text-white my-text-decoration"
+          href="https://www.facebook.com/"
+          target="_blank"
+        ></a>
+      </div>
+      <div>
+        <a
+          href="#home"
+          target="_blank"
+          class="w3-hover-opacity w3-text-white"
+          style="padding-right: 20px"
+          >Privacy Policy</a
+        >
+        <a
+          href="#home"
+          target="_blank"
+          class="w3-hover-opacity w3-text-white"
+          style="padding-right: 20px"
+          >Terms of User</a
+        >
+        <a href="#home" target="_blank" class="w3-hover-opacity w3-text-white"
+          >Accessibility</a
+        >
+      </div>
+    
+    </footer>
 <script>
       // Toggle between showing and hiding the sidebar when clicking the menu icon
       var mySidebar = document.getElementById("mySidebar");
@@ -239,7 +444,52 @@
       function w3_close() {
         mySidebar.style.display = "none";
       }
-    </script>
+      
+      // carousel slideshow begin
+      var myIndex = 0;
+      carousel();
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
 
+      // slideshow - carousel
+      // hook each carousel button
+      function currentDiv(n) {
+        showDivs((slideIndex = n));
+        myIndex = n;
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+        }
+        x[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " w3-opacity-off";
+      }
+      // carousel slideshow end
+     
+    </script>
 </body>
 </html>
