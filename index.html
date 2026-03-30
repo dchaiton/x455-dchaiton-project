@@ -13,6 +13,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<script
+      type="text/JavaScript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/JavaScript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"
+    ></script>
 <style>
 .libre-caslon-text-regular {
   font-family: "Libre Caslon Text", serif;
@@ -310,8 +318,58 @@ a {
   </div>
 
   <!-- Contact Section -->
-  <div class="w3-container w3-padding-32" id="tips & planning">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Tips & Planning</h3>
+
+   <div class="w3-container w3-padding-32" id="tips & planning">
+    <h1 class="w3-center" style="font-family:libre caslon text bold">Tips & Planning</h1>
+
+<table id="myTable" class="w3-table-all">
+            <thead>
+                <th>DESTINATION</th>
+                <th>REGION</th>
+                <th>KNOWN FOR</th>
+                <th>BEST FOR</th>
+                <th>IDEAL VISIT TIME</th>
+              </tr>
+            </thead>
+            <tr class="w3-hover-sand">
+              <td>San Jose</td>
+              <td>Central Valley</td>
+              <td>Museums, markets, urban culture</td>
+              <td>First-time visitors</td>
+              <td>Year-round</td>
+            </tr>
+            <tr class="w3-hover-sand">
+              <td>Arenal Volcano</td>
+              <td>Northern Zone</td>
+              <td>Volcano views, hot springs</td>
+              <td>Adventure & relaxation</td>
+              <td>Dec-April</td>
+            </tr>
+            <tr class="w3-hover-sand">
+              <td>Monteverde Cloud Forest</td>
+              <td>Puntarenas</td>
+              <td>Cloud forest, wildlife</td>
+              <td>Nature lovers</td>
+              <td>Dec-April</td>
+            </tr>
+            <tr class="w3-hover-sand">
+              <td>Manual Antonio</td>
+              <td>Central Pacific</td>
+              <td>Beaches, national park</td>
+              <td>Families & couples</td>
+              <td>Dec-April</td>
+            </tr>
+            <tr class="w3-hover-sand">
+              <td>Puero Viejo de Talamanca</td>
+              <td>Caribbean Coast</td>
+              <td>Beaches, surfing</td>
+              <td>Backpackers</td>
+              <td>Sept-Oct</td>
+            </tr>
+          </table>
+
+
+
     <p>Lets get in touch and talk about your next project.</p>
     <form action="/action_page.php" target="_blank">
       <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
@@ -323,6 +381,8 @@ a {
       </button>
     </form>
   </div>
+
+
 <!-- Hotels & Reorts Section -->
   <div class="w3-container w3-padding-32" id="hotels & resorts">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Hotels & Resorts</h3>
@@ -453,7 +513,15 @@ a {
         x[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " w3-opacity-off";
       }
-    
+    $(document).ready(function () {
+        $("table#myTable").tablesorter({
+          sortList: [
+            [2, 1],
+          ] /* 1st number - column to sort, 2nd number - asending (2) or descending order (1) */,
+          CssAsc: "tablesorter-headerAsc",
+          CssDesc: "tablesorter-headerDesc",
+        });
+      });
      
     </script>
 </body>
