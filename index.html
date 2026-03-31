@@ -79,6 +79,12 @@ a {
         margin-right: auto;
         max-width: 65%;
       }
+
+      /* accordion button hover */
+      #accordionBtn1:hover,
+      #accordionBtn2:hover {
+        background-color: blanchedalmond !important;
+      }
 </style>
         
 </head>
@@ -372,25 +378,158 @@ a {
             </tr>
           </table>
 
-
-
-    <p>Lets get in touch and talk about your next project.</p>
-    <form action="/action_page.php" target="_blank">
-      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
-      <button class="w3-button w3-black w3-section" type="submit">
-        <i class="fa fa-paper-plane"></i> SEND MESSAGE
-      </button>
-    </form>
   </div>
 
 
 <!-- Itinerary -->
   <div class="w3-container w3-padding-32" id="itinerary">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Itinerary</h3>
-    <p>Often called the “Castle in the Rockies,” the Fairmont Banff Springs is one of Canada's most iconic hotels, providing luxury and history in a stunning, castle-like setting. It offers a full-service spa, numerous dining options, and easy access to outdoor activities. Located close to downtown Banff, the Banff Park Lodge offers comfortable lodging with convenient access to the town’s shops, restaurants, and attractions. It features spacious rooms and excellent amenities, including an indoor pool, sauna, and steam room, making it a great family-friendly option.</p>
+     <h1 class="w3-center" style="font-family:libre caslon text bold">Itinerary</h1>
+  
+            <div class="w3-row">
+            <div class="w3-col w3-left" style="padding-right: 3px">
+              <button
+                onclick="myAccordion('accordion1')"
+                class="w3-button w3-block w3-light-grey w3-left-align"
+                id="accordionBtn1"
+              >
+                <h4 style="font-family:libre caslon text bold">DAY 1: SAN JOSE, COSTA RICA <i class="fa fa-caret-down"></i></h4>
+              </button>
+              <div
+                id="accordion1"
+                class="w3-show w3-container"
+                style="height: 180px"
+              >
+                <p>
+                  Bienvenidos! Your tropical adventure begins! 
+                  Meet fellow travelers and our expedition leaders—both “ticos,” or native Costa Ricans—at a lively welcome dinner.
+
+                 <P>Meals Included: Dinner</P> 
+                 <P>Accommodations: Intercontinental San José</P>
+                </p>
+              </div>
+            </div>
+              <div class="w3-col w3-left" style="padding-left: 3px">
+              <button
+                onclick="myAccordion('accordion2')"
+                class="w3-button w3-block w3-light-grey w3-left-align"
+                id="accordionBtn2"
+              >
+                <h4 style="font-family:libre caslon text bold">DAY 2: SAN JOSE / MONTEVERDE <i class="fa fa-caret-down"></i></h4>
+              </button>
+              <div
+                id="accordion2"
+                class="w3-hide w3-container"
+                style="height: 180px"
+              >
+                <p>
+                Depart the capital and journey into the lush highlands of Monteverde. Travel through scenic landscapes as you ascend into one of Costa Rica’s most biodiverse regions, known for its misty forests and rich wildlife.
+                <p>Meals Included: Breakfast, Dinner</p>
+                <p>Accommodations: Hotel Belmar</p>
+                </p>
+              </div>
+            </div>
+              <div class="w3-col w3-left" style="padding-left: 3px">
+              <button
+                onclick="myAccordion('accordion3')"
+                class="w3-button w3-block w3-light-grey w3-left-align"
+                id="accordionBtn3"
+              >
+               <h4 style="font-family:libre caslon text bold">DAY 3: MONTEVERDE <i class="fa fa-caret-down"></i></h4>
+              </button>
+              <div
+                id="accordion3"
+                class="w3-hide w3-container"
+                style="height: 180px"
+              >
+                <p>
+               Spend the day immersed in the enchanting cloud forest of Monteverde. Explore hanging bridges, forest trails, or opt for thrilling canopy adventures while spotting exotic wildlife in this unique ecosystem.
+                <p>Meals Included: Breakfast, Lunch</p>
+                <p>Accommodations: Hotel Belmar</p>
+                </p>
+              </div>
+            </div>
+          <div class="w3-col w3-left" style="padding-left: 3px">
+              <button
+                onclick="myAccordion('accordion4')"
+                class="w3-button w3-block w3-light-grey w3-left-align"
+                id="accordionBtn4"
+              >
+               <h4 style="font-family:libre caslon text bold">DAY 4: GUANACASTE <i class="fa fa-caret-down"></i></h4>
+              </button>
+              <div
+                id="accordion4"
+                class="w3-hide w3-container"
+                style="height: 180px"
+              >
+                <p>
+               Travel to the sun-soaked shores of Guanacaste Province, where golden beaches and Pacific breezes await. Enjoy a relaxing afternoon by the ocean or take in a stunning coastal sunset.
+                <p>Meals Included: Breakfast, Dinner</p>
+                <p>Accommodations: JW Marriott Guanacaste Resort & Spa</p>
+                </p>
+              </div>
+            </div>
+              <div class="w3-col w3-left" style="padding-left: 3px">
+              <button
+                onclick="myAccordion('accordion5')"
+                class="w3-button w3-block w3-light-grey w3-left-align"
+                id="accordionBtn5"
+              >
+                <h4 style="font-family:libre caslon text bold">DAY 5: RIO PERDIDO <i class="fa fa-caret-down"></i></h4>
+              </button>
+              <div
+                id="accordion5"
+                class="w3-hide w3-container"
+                style="height: 180px"
+              >
+                <p>
+               Journey to Río Perdido, a hidden gem set within a dramatic canyon landscape. Discover natural thermal rivers, scenic hiking trails, and opportunities for adventure in this eco-luxury setting.
+                <p>Meals Included: Breakfast, Lunch & Dinner</p>
+                <p>Accommodations: Río Perdido Hotel & Thermal River</p>
+                </p>
+              </div>
+            </div>
+              <div class="w3-col w3-left" style="padding-left: 3px">
+              <button
+                onclick="myAccordion('accordion6')"
+                class="w3-button w3-block w3-light-grey w3-left-align"
+                id="accordionBtn6"
+              >
+               <h4 style="font-family:libre caslon text bold">DAY 6: COLONIA LIBERTAD <i class="fa fa-caret-down"></i></h4>
+              </button>
+              <div
+                id="accordion6"
+                class="w3-hide w3-container"
+                style="height: 180px"
+              >
+                <p>
+               Visit the rural community of Colonia Libertad for an authentic cultural experience. Connect with locals and gain insight into traditional Costa Rican life and sustainability practices.
+                <p>Meals Included: Breakfast & Lunch</p>
+                <p>Accommodations: Hacienda La Pacífica</p>
+                </p>
+              </div>
+            </div>
+              <div class="w3-col w3-left" style="padding-left: 3px">
+              <button
+                onclick="myAccordion('accordion7')"
+                class="w3-button w3-block w3-light-grey w3-left-align"
+                id="accordionBtn7"
+              >
+              <h4 style="font-family:libre caslon text bold">DAY 7: LIBERIA <i class="fa fa-caret-down"></i></h4>
+              </button>
+              <div
+                id="accordion7"
+                class="w3-hide w3-container"
+                style="height: 180px"
+              >
+                <p>
+               Conclude your journey in Liberia. Transfer to the airport for your departure, taking with you unforgettable memories of your Costa Rican adventure.
+                <p>Meals Included: Breakfast</p>
+                <p>Accommodations: Departure day - no overnight</p>
+                </p>
+              </div>
+            </div>
+
+
 
 <!-- Gallery Section -->
    <div class="w3-container w3-padding-32" id="gallery">
@@ -527,6 +666,21 @@ a {
         });
       });
      
+function myAccordion(id) {
+        var x = document.getElementById(id);
+        // if the accordion text is hidden, show it and change the button color to orange
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace("w3-brown", "w3-orange");
+        } else {
+          // if the accordion text is displayed, hide it and change the button color to brown
+          x.className = x.className.replace(" w3-show", "");
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace("w3-orange", "w3-brown");
+        }
+      }
+
     </script>
 </body>
 </html>
