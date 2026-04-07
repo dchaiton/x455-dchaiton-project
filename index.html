@@ -166,7 +166,7 @@ a {
 <div class="w3-content w3-padding" style="max-width:1564px">
 
   <!-- Destinations -->
-      <div class="w3-row w3-padding-64" id="destinations">
+      <div class="w3-row w3-padding-32" id="destinations">
         <div class="w3-padding-large">
           <h1 class="w3-center" style="font-family:libre caslon text bold">Destinations</h1>
 
@@ -248,7 +248,7 @@ a {
             />
             </div>
 
-        <div class="w3-padding-64">
+        <div class="w3-padding-32">
           <h2 class="w3-center" style="font-family:libre caslon text bold">The Top 10 Most Scenic Hikes in Banff for Families</h2>
 
   <div class="my-scrolling" style="padding-right: 10px">
@@ -379,7 +379,7 @@ a {
               <div
                 id="accordion1"
                 class="w3-show w3-container"
-                style="height: 150px"
+                style="height: 200px"
               >
                 <p>
                   Bienvenidos! Your tropical adventure begins! 
@@ -545,13 +545,165 @@ a {
 
 <!-- Gallery Section -->
    <div class="w3-container w3-padding-32" id="gallery">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Gallery</h3>
-    <p>Here are some of the best suitcases for travel in 2026, based on expert reviews and real traveler feedback. I’ll break them down by category so you can quickly find what fits your style and budget.</p>
+   <h1 class="w3-center" style="font-family:libre caslon text bold">Destination Gallery</h1>
+  </div>
 
-<!-- Image of location/map -->
-<div class="w3-container">
-  <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
-</div>
+   <div class="w3-row-padding" style="margin: 15px 0px">
+           
+            <div class="w3-col s4">
+              <img
+                src="./img/costa rica waterfall 300x300.jpeg"
+                style="width: 100%; cursor: zoom-in"
+                onclick="document.getElementById('modal01').style.display='block'"
+                class="w3-hover-shadow"
+              />
+             </div>
+
+            <div class="w3-col s4">
+              <img
+                src="./img/Costa Rica Bridge 300x300.jpeg"
+                style="width: 100%; cursor: zoom-in"
+                onclick="document.getElementById('modal02').style.display='block'"
+                class="w3-hover-shadow"
+              />
+            </div>
+         
+            <div class="w3-col s4">
+              <img
+                src="./img/Costa Rica Sloth tree 300x300.jpeg"
+                style="width: 100%; cursor: zoom-in"
+                onclick="document.getElementById('modal03').style.display='block'"
+                class="w3-hover-shadow"
+              />
+            </div>
+             <div class="w3-row-padding" style="margin: 15px 0px"></div>
+
+              <div class="w3-col s4">
+              <img
+                src="./img/Nature-Wildlife-Safari-Float 300x300.jpeg"
+                style="width: 100%; cursor: zoom-in"
+                onclick="document.getElementById('modal04').style.display='block'"
+                class="w3-hover-shadow"
+              />
+            </div>
+
+             <div class="w3-col s4">
+              <img
+                src="./img/Coffee Chocolate Tour 300x300.jpg"
+                style="width: 100%; cursor: zoom-in"
+                onclick="document.getElementById('modal05').style.display='block'"
+                class="w3-hover-shadow"
+              />
+            </div>
+
+            <div class="w3-col s4">
+              <img
+                src="./img/costa rica_volcano 300x300 rev.jpeg"
+                style="width: 100%; cursor: zoom-in"
+                onclick="document.getElementById('modal06').style.display='block'"
+                class="w3-hover-shadow"
+              />
+            </div>
+  
+
+                     <!-- add the first modal, set id="modal01"-->
+          <!-- each lightbox content (modal) should have a unique modal id -->
+          <div
+            id="modal01"
+            class="w3-modal"
+            onclick="this.style.display='none'"
+          >
+            <span
+              class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+              style="cursor: pointer"
+              >&times;</span
+            >
+            <div class="w3-modal-content w3-animate-zoom">
+              <h4 class="w3-center" style="font-family:libre caslon text bold">La Fortuna Waterfall</h4>
+              <img src="./img/costa rica waterfall.jpg" style="width: 100%" />
+            </div>
+          </div>
+
+           <div
+            id="modal02"
+            class="w3-modal"
+            onclick="this.style.display='none'"
+          >
+            <span
+              class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+              style="cursor: pointer"
+              >&times;</span
+            >
+            <div class="w3-modal-content w3-animate-zoom">
+              <h4 class="w3-center" style="font-family:libre caslon text bold">Mistico Park Hanging Bridges</h4>
+              <img src="./img/Costa Rica Bridge.jpg" style="width: 100%" />
+            </div>
+          </div>
+
+          <div
+            id="modal03"
+            class="w3-modal"
+            onclick="this.style.display='none'"
+          >
+            <span
+              class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+              style="cursor: pointer"
+              >&times;</span
+            >
+            <div class="w3-modal-content w3-animate-zoom">
+              <h4 class="w3-center" style="font-family:libre caslon text bold">Sloth Spotting in La Fortuna</h4>
+              <img src="./img/Costa Rica Sloth tree.jpg" style="width: 100%" />
+            </div>
+          </div>
+
+          <div
+            id="modal04"
+            class="w3-modal"
+            onclick="this.style.display='none'"
+          >
+            <span
+              class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+              style="cursor: pointer"
+              >&times;</span
+            >
+            <div class="w3-modal-content w3-animate-zoom">
+              <h4 class="w3-center" style="font-family:libre caslon text bold">Safari River Float, Penas Blancas River</h4>
+              <img src="./img/Nature-Wildlife-Safari-Float.jpeg" style="width: 100%" />
+            </div>
+          </div>
+
+            <div
+            id="modal05"
+            class="w3-modal"
+            onclick="this.style.display='none'"
+          >
+            <span
+              class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+              style="cursor: pointer"
+              >&times;</span
+            >
+            <div class="w3-modal-content w3-animate-zoom">
+              <h4 class="w3-center" style="font-family:libre caslon text bold">North Fields Coffee & Chocolate Tour</h4>
+              <img src="./img/Coffee Chocolate Tour.jpeg" style="width: 100%" />
+            </div>
+          </div>
+
+          <div
+            id="modal06"
+            class="w3-modal"
+            onclick="this.style.display='none'"
+          >
+            <span
+              class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+              style="cursor: pointer"
+              >&times;</span
+            >
+            <div class="w3-modal-content w3-animate-zoom">
+              <h4 class="w3-center" style="font-family:libre caslon text bold">Arenal Volcano</h4>
+              <img src="./img/costa rica_volcano.jpg" style="width: 100%" />
+            </div>
+          </div>
+
 
 <!-- End page content -->
 </div>
